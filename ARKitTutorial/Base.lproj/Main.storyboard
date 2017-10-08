@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ARKitTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JLd-eN-3lN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3j-Ps-nRr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <action selector="addCube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Jl-gp-QBf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JLd-eN-3lN" firstAttribute="trailing" secondItem="a3j-Ps-nRr" secondAttribute="trailing" id="6aD-OE-Iw0"/>
+                            <constraint firstItem="a3j-Ps-nRr" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ec3-aL-1TE"/>
+                            <constraint firstItem="a3j-Ps-nRr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Eml-Pn-arb"/>
+                            <constraint firstItem="JLd-eN-3lN" firstAttribute="leading" secondItem="a3j-Ps-nRr" secondAttribute="leading" id="PEM-bd-UOL"/>
+                            <constraint firstItem="a3j-Ps-nRr" firstAttribute="bottom" secondItem="JLd-eN-3lN" secondAttribute="bottom" id="PEm-9a-sKx"/>
+                            <constraint firstItem="a3j-Ps-nRr" firstAttribute="top" secondItem="JLd-eN-3lN" secondAttribute="top" id="PMm-mn-47c"/>
+                            <constraint firstItem="a3j-Ps-nRr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hiZ-Gi-1BJ"/>
+                            <constraint firstAttribute="trailing" secondItem="a3j-Ps-nRr" secondAttribute="trailing" id="xu1-mC-Ntt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="JLd-eN-3lN" id="px7-0a-lfO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
